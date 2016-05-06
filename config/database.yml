@@ -79,7 +79,12 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: city_api_production
-  username: city_api
-  password: <%= ENV['CITY_API_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  username: tkvesjkuztusqv
+  password: 3hdtOGR0wxI7SAGJeGBmXJk4og
+  hostname: ec2-54-243-243-135.compute-1.amazonaws.com
+  pool: 5
+  port: 5432
+  url: postgres://tkvesjkuztusqv:3hdtOGR0wxI7SAGJeGBmXJk4og@ec2-54-243-243-135.compute-1.amazonaws.com:5432/d55ffkt5l8vvuu
+  database: d55ffkt5l8vvuu
